@@ -6,6 +6,8 @@ public class Attacker : MonoBehaviour
 {
     // Configuration Parameters
     // [Range (0f, 5f)]
+    [Header("Enemy Effects")]
+    [SerializeField] GameObject deathVFX;
     float currentSpeed = 1f;
 
     // Update is called once per frame
