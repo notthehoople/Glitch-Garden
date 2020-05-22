@@ -34,7 +34,6 @@ public class StarDisplay : MonoBehaviour
         {
             stars -= starsToSpend;
             UpdateDisplay();
-
         }
     }
 }
