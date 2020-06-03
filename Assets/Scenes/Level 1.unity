@@ -130,8 +130,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8f2f23967554be299774e80428fd88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnDelay: 1
-  maxSpawnDelay: 5
+  minSpawnDelay: 10
+  maxSpawnDelay: 10
   attackerPrefab: {fileID: 8918433404354023054, guid: f5746620276214b0da8d3ad162c6468f,
     type: 3}
 --- !u!4 &63351541 stripped
@@ -189,8 +189,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8f2f23967554be299774e80428fd88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnDelay: 1
-  maxSpawnDelay: 5
+  minSpawnDelay: 10
+  maxSpawnDelay: 10
   attackerPrefab: {fileID: 8918433404354023054, guid: f5746620276214b0da8d3ad162c6468f,
     type: 3}
 --- !u!4 &570624028 stripped
@@ -431,8 +431,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8f2f23967554be299774e80428fd88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnDelay: 1
-  maxSpawnDelay: 5
+  minSpawnDelay: 10
+  maxSpawnDelay: 10
   attackerPrefab: {fileID: 8918433404354023054, guid: f5746620276214b0da8d3ad162c6468f,
     type: 3}
 --- !u!4 &1187974472 stripped
@@ -778,7 +778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bc60992efdc6492d86fbb5c96dde9a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stars: 100
+  stars: 1000
 --- !u!1 &1675158927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,8 +1026,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8f2f23967554be299774e80428fd88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnDelay: 7
-  maxSpawnDelay: 7
+  minSpawnDelay: 10
+  maxSpawnDelay: 10
   attackerPrefab: {fileID: 8918433404354023054, guid: f5746620276214b0da8d3ad162c6468f,
     type: 3}
 --- !u!4 &2059158530 stripped
@@ -1054,8 +1054,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8f2f23967554be299774e80428fd88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpawnDelay: 1
-  maxSpawnDelay: 5
+  minSpawnDelay: 10
+  maxSpawnDelay: 10
   attackerPrefab: {fileID: 8918433404354023054, guid: f5746620276214b0da8d3ad162c6468f,
     type: 3}
 --- !u!4 &2092785463 stripped
