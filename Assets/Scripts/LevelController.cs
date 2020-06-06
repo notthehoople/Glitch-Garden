@@ -6,6 +6,7 @@ public class LevelController : MonoBehaviour
 {
     // Configuration Parameters
     [SerializeField] GameObject winTextDisplay;
+    [SerializeField] GameObject loseTextDisplay;
     [SerializeField] float waitToLoad = 4f;
     [SerializeField] int numberOfAttackers = 0;
     bool levelTimerFinished = false;
@@ -13,6 +14,7 @@ public class LevelController : MonoBehaviour
     private void Start()
     {
         winTextDisplay.SetActive(false);
+        loseTextDisplay.SetActive(false);
     }
 
     public void AttackerSpawned()
@@ -35,6 +37,13 @@ public class LevelController : MonoBehaviour
         GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(waitToLoad);
         FindObjectOfType<LevelLoader>().LoadNextScene();
+    }
+
+    public void HandleLoseCondition()
+    {
+        loseTextDisplay.SetActive(true);
+        // Stop the game speed as we want all action to stop
+        Time.timeScale = 0;
     }
 
     public void LevelTimerFinished()

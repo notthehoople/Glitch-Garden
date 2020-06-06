@@ -29,7 +29,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (playerHealth <= 0)
         {
-            FindObjectOfType<LevelLoader>().LoadYouLoseScene();
+            FindObjectOfType<LevelController>().HandleLoseCondition();
         }
     }
 

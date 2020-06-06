@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winTextDisplay: {fileID: 0}
+  loseTextDisplay: {fileID: 0}
   waitToLoad: 4
   numberOfAttackers: 0
 --- !u!114 &790913612
