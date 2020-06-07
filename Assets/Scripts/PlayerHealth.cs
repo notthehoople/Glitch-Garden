@@ -6,13 +6,16 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
     // Configuration Parameters
-    [SerializeField] int playerHealth = 100;
+    [SerializeField] float baseHealth = 4;
+    float playerHealth;
 
     // Cached References
     Text healthText;
 
     void Start()
     {
+        // Reduce player health based on the difficulty chosen
+        playerHealth = baseHealth - PlayerPrefsController.GetDifficultyLevel();
         healthText = GetComponent<Text>();
         UpdateDisplay();
     }
@@ -33,7 +36,7 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    public int CurrentPlayerHealth()
+    public float CurrentPlayerHealth()
     {
         return playerHealth;
     }

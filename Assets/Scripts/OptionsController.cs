@@ -7,6 +7,8 @@ public class OptionsController : MonoBehaviour
 {
     [SerializeField] Slider volumeSlider;
     [SerializeField] float defaultVolume = 0.5f;
+    [SerializeField] Slider difficultySlider;
+    [SerializeField] float defaultDifficulty = 1;
 
     // Cached References
     MusicPlayer musicPlayer;
@@ -16,9 +18,10 @@ public class OptionsController : MonoBehaviour
     {
         musicPlayer = FindObjectOfType<MusicPlayer>();
         volumeSlider.value = PlayerPrefsController.GetMasterVolume();
+        difficultySlider.value = PlayerPrefsController.GetDifficultyLevel();
     }
 
-    // Update is called once per frame
+    // TODO Change this code to run when one of the Sliders changes instead on every frame
     void Update()
     {
         if (musicPlayer)
@@ -33,13 +36,15 @@ public class OptionsController : MonoBehaviour
 
     public void SaveAndExit()
     {
-        // Save the volume level before we go back to the Main Menu
+        // Save the volume level & difficulty before we go back to the Main Menu
         PlayerPrefsController.SetMasterVolume(volumeSlider.value);
+        PlayerPrefsController.SetDifficultyLevel(difficultySlider.value);
         FindObjectOfType<LevelLoader>().LoadMainMenu();
     }
 
     public void SetDefaults()
     {
         volumeSlider.value = defaultVolume;
+        difficultySlider.value = defaultDifficulty;
     }
 }
