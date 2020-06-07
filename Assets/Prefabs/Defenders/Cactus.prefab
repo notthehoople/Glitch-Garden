@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd8f301641adf49a7ab78d1b0577127c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 75
+  health: 50
   deathVFX: {fileID: 0}
   durationOfExplosion: 1
 --- !u!1 &669788082644239298
