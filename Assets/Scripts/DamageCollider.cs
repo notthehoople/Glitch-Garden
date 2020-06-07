@@ -11,5 +11,9 @@ public class DamageCollider : MonoBehaviour
     {
         // TODO Add different damage based on the enemy that collides with us
         FindObjectOfType<PlayerHealth>().LoseHealth(damage);
+
+        // BUGFIX: destroy the attacker that reaches us otherwise it's impossible for the player to win!
+        FindObjectOfType<LevelController>().AttackerKilled();
+        Destroy(gameObject);
     }
 }
